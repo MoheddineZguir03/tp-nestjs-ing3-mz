@@ -9,4 +9,8 @@ export class TravelController {
   findAll() {
     return this.travelService.findAll();
   }
+  @Get(':id')
+  findOne(id: number) {
+    return this.travelService.findOne(id);
+  }
 }

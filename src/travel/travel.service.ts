@@ -10,4 +10,7 @@ export class TravelService {
     findAll() {
         return this.trips;
     }
+    findOne(id: number) {
+        return this.trips.find(trip => trip.id === id);
+    }
 }
