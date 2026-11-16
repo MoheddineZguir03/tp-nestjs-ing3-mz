@@ -6,4 +6,8 @@ export class TravelService {
         { id: 1, name: 'To china', price: 9000},
         { id: 2, name: 'To Morocco', price: 4000},
     ];
+
+    findAll() {
+        return this.trips;
+    }
 }
